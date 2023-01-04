@@ -8,10 +8,15 @@
     flex-wrap: wrap;
 }
 
+.flex-wrap{
+    max-width: 900px;
+    background-color: #e88961;
+}
+
 .name{
     text-align: center;
     font-size: 2.7rem;
-    color:#e88961;
+    /* color:#e88961; */
     padding-bottom: 20px;
     font-family: var(--primary);
     font-weight: 700;

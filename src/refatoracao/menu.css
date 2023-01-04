@@ -3,6 +3,13 @@
     src: url(../font/Sugar\ Snow.otf);
 }
 
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
 .header .header-container{
     display: flex;
     justify-content: space-between;
@@ -33,7 +40,6 @@
 }
 
 nav ul li a:hover{
-    /* background-color: var(--secondary-color); */
     background-color: rgba(255, 255, 255, 0.697);
     color: rgba(0, 0, 0, 0.85);
 }
@@ -100,11 +106,6 @@ nav ul li a:hover{
 }
 
 @media(max-width: 900px){
-   
-    /* .header .header-container{
-        background-color: white;
-        color: #000;
-    } */
 
     .header .menu{
         display: block;
