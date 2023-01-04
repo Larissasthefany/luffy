@@ -1,0 +1,141 @@
+@font-face {
+    font-family: logo;
+    src: url(../font/Sugar\ Snow.otf);
+}
+
+.header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    /* background-color: var(--primary-color); */
+    background-color: #E86D33;
+    margin-bottom: 10px;
+}
+
+.logo h1{
+    color: #F2D8CE;
+    font-size: 3em;
+    font-family: logo, sans-serif;
+}
+
+.header nav ul{
+    display: flex;
+}
+
+.header nav ul li a{
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin: 7px;
+    transition: .5s;
+    color: #F2D8CE;
+    font-size: 1.4em;
+    font-family: var(--primary);
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    /* background-color: var(--secondary-color); */
+    background-color: rgba(255, 255, 255, 0.697);
+    color: rgba(0, 0, 0, 0.85);
+}
+
+/* Menu de Hamburguer */
+.header .menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.header nav label{
+    display: flex;
+    flex-direction: column;
+}
+
+.header .hamburguer{
+    background-color: #fff;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .hamburguer::before,
+.header .hamburguer::after{
+    background-color: #fff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.header .hamburguer::before{
+    top: -10px;
+}
+
+.header .hamburguer::after{
+    bottom: -10px;
+}
+
+.header input{
+    display: none;
+}
+
+.header input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.header input:checked ~label .hamburguer::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked ~label .hamburguer::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media(max-width: 900px){
+   
+    /* .header .header-container{
+        background-color: white;
+        color: #000;
+    } */
+
+    .header .menu{
+        display: block;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+
+    .header input:checked ~ ul {
+        display: block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .header nav ul{
+        width: 200px;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .header nav ul a{
+        text-align: center;
+        padding: 20px;
+        display: block;
+    }
+}
