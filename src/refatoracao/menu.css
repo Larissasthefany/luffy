@@ -8,9 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
-    /* background-color: var(--primary-color); */
     background-color: #E86D33;
-    margin-bottom: 10px;
 }
 
 .logo h1{

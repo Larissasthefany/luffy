@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.name{
+    text-align: center;
+    font-size: 2.7rem;
+    color:#e88961;
+    padding-bottom: 20px;
+    font-family: var(--primary);
+    font-weight: 700;
+}
+
+.text{
+    font-size: 2rem;
+    line-height: 35px;
+    text-align: justify;
+}
