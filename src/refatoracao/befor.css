@@ -1,0 +1,15 @@
+.name{
+    position: relative;
+    padding-left: 20px;
+    /* text-transform: uppercase; */
+}
+
+.name::after{
+    position: absolute;
+    left: 0;
+    top: -6;
+    height: 43px;
+    width: 5px;
+    content: "";
+    background-color: rgba(77, 77, 171, 0.64);
+}

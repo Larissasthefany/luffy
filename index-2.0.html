@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="src/refatoracao/variable.css">
     <link rel="stylesheet" href="src/refatoracao/menu.css">
     <link rel="stylesheet" href="src/refatoracao/galeria.css">
+    <link rel="stylesheet" href="src/refatoracao/befor.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,400;0,500;1,500&family=Cormorant+Garamond:ital,wght@1,600&family=DynaPuff:wght@400;500;600&family=EB+Garamond:wght@400;500;600;700;800&family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Fira+Code:wght@300;400;500;600;700&family=Inconsolata:wght@200;400;500;600;800;900&family=Kumbh+Sans:wght@400;700&family=Manrope&family=Noto+Sans+Chakma&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;600&family=Passion+One&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&family=Roboto+Mono:ital,wght@0,500;1,100&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Silkscreen:wght@400;700&family=Square+Peg&family=VT323&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,400;0,500;1,500&family=Cormorant+Garamond:ital,wght@1,600&family=DynaPuff:wght@400;500;600&family=EB+Garamond:wght@400;500;600;700;800&family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Fira+Code:wght@300;400;500;600;700&family=Inconsolata:wght@200;400;500;600;800;900&family=Kumbh+Sans:wght@400;700&family=Manrope&family=Noto+Sans+Chakma&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;600&family=Passion+One&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&family=Roboto+Mono:ital,wght@0,500;1,100&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Silkscreen:wght@400;700&family=Square+Peg&family=VT323&display=swap" rel="stylesheet">
@@ -29,9 +32,9 @@
                     </div>
                 </label>
                 <ul>
-                    <li><a href="#">Friends</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#friends">Friends</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,17 +45,34 @@
             <img class="images" src="src/img/one-piece-1-1.jpg" alt="">
         </section>
 
-        <div class="sobre">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores molestiae libero autem tempore iste modi corrupti perferendis, enim et labore officia? Et temporibus dolores exercitationem soluta libero voluptates vitae dicta.
+        <div class="texto-sobre" data-aos="fade-up">
+            <div class="sobre">
+                One Piece é uma série de mangá escrita e ilustrada por Eiichiro Oda. Os capítulos têm sido serializados na revista Weekly Shōnen Jump desde 22 de julho de 1997, com os capítulos compilados e publicados em 104 volumes tankōbon pela editora Shueisha até novembro de 2022. One Piece conta as aventuras de Monkey D. Luffy, um jovem cujo corpo ganhou as propriedades de borracha após ter comido uma fruta do diabo acidentalmente. Com sua tripulação, os Piratas do Chapéu de Palha, Luffy explora a Grand Line em busca do tesouro mais procurado do mundo, o "One Piece", a fim de se tornar o próximo Rei dos Piratas.
+            </div>
         </div>
 
             <div class="container">
-                    <div class="flex-wrap">
-                        <h2 class="name">Luffy</h2>
-                        <img src="src/img/luffy.png" alt="" class="picture">
-                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat maxime eligendi, doloribus consectetur dignissimos aut quidem neque, ducimus et nostrum. Neque id facilis quibusdam aspernatur, minima rerum necessitatibus facere.</p>
+                    <div class="flex-wrap" data-aos="fade-up">
+                            <img  class="picture" src="src/img/luffy.png" alt="luffy">
+                        <div class="about">
+                            <h2 class="name"><span>Monkey</span> D. Luffy</h2>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem odio atque suscipit! Blanditiis dolores excepturi quis. Vel asperiores nam similique dolorem, autem reiciendis ea optio obcaecati, ipsum qui culpa. </p>
+                        </div>
+                    </div>
+                    <div class="flex-wrap" data-aos="fade-left">
+                        <img  class="picture" src="src/img/nico.png" alt="luffy">
+                    <div class="about">
+                        <h2 class="name"><span>Nico</span> Robin</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem odio atque suscipit! Blanditiis dolores excepturi quis. Vel asperiores nam similique dolorem, autem reiciendis ea optio obcaecati, ipsum qui culpa. </p>
                     </div>
             </div>
         </main>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration:1300
+    });
+  </script>
 </body>
 </html>

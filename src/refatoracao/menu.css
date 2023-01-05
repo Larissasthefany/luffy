@@ -3,10 +3,13 @@
     src: url(../font/Sugar\ Snow.otf);
 }
 
+body{
+    height: 1500px;
+}
+
 header{
     position: fixed;
-    top:0;
-    left: 0;
+    top: 0;
     width: 100%;
 }
 
@@ -20,7 +23,7 @@ header{
 
 .logo h1{
     color: #F2D8CE;
-    font-size: 3em;
+    font-size: 2.7em;
     font-family: logo, sans-serif;
 }
 
@@ -30,7 +33,7 @@ header{
 
 .header nav ul li a{
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 10px 10px;
     margin: 7px;
     transition: .5s;
     color: #F2D8CE;
