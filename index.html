@@ -1,190 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/query.css" media="screen and (max-width:700px)">
-    <link rel="stylesheet" href="src/css/tripulacao.css">
-    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/variable.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,400;0,500;1,500&family=Cormorant+Garamond:ital,wght@1,600&family=DynaPuff:wght@400;500;600&family=EB+Garamond:wght@400;500;600;700;800&family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Fira+Code:wght@300;400;500;600;700&family=Inconsolata:wght@200;400;500;600;800;900&family=Kumbh+Sans:wght@400;700&family=Manrope&family=Noto+Sans+Chakma&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;600&family=Passion+One&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&family=Roboto+Mono:ital,wght@0,500;1,100&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Silkscreen:wght@400;700&family=Square+Peg&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,400;0,500;1,500&family=Cormorant+Garamond:ital,wght@1,600&family=DynaPuff:wght@400;500;600&family=EB+Garamond:wght@400;500;600;700;800&family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Fira+Code:wght@300;400;500;600;700&family=Inconsolata:wght@200;400;500;600;800;900&family=Kumbh+Sans:wght@400;700&family=Manrope&family=Noto+Sans+Chakma&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;600&family=Passion+One&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&family=Roboto+Mono:ital,wght@0,500;1,100&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Silkscreen:wght@400;700&family=Square+Peg&family=VT323&display=swap" rel="stylesheet">
     <title>One Piece</title>
 </head>
-
 <body>
-    <header>
-        <div>
-            <strong>Luffy</strong>
-            <span>One Piece</span>
-        </div>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <h1>One Piece</h1>
+            </a>
 
-        <nav class="menu" style="display:block;">
-            <ul class="navbar">
-                <li> <a href="#">Sobre</a></li>
-                <li><a href="#">Amigos</a>
-            </ul>
-        </nav>
+            <nav>
+                <input type="checkbox" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="#friends">Friends</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <h1 class="titulo-principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro aliquam, illum deleniti.</h1>
+    <main>
+        <section class="images">
+            <img src="src/img/teste.jpg" alt="Imagem da capa">
+        </section>
+
+        <div class="texto-sobre" id="about">
+            <div class="sobre">
+                One Piece é uma série de mangá escrita e ilustrada por Eiichiro Oda. Os capítulos têm sido serializados na revista Weekly Shōnen Jump desde 22 de julho de 1997, com os capítulos compilados e publicados em 104 volumes tankōbon pela editora Shueisha até novembro de 2022. One Piece conta as aventuras de Monkey D. Luffy, um jovem cujo corpo ganhou as propriedades de borracha após ter comido uma fruta do diabo acidentalmente. Com sua tripulação, os Piratas do Chapéu de Palha, Luffy explora a Grand Line em busca do tesouro mais procurado do mundo, o "One Piece", a fim de se tornar o próximo Rei dos Piratas.
+            </div>
+        </div>
+
+            <div class="container" id="friends">
+                <div class="flex-wrap" data-aos="fade-up">
+                <img  class="picture" src="src/img/luffy.png" alt="luffy">
+            <div class="about">
+                <h2 class="name"><span>Monkey</span> D. Luffy</h2>
+                <p class="text">Nascido em East Blue, Monkey D. Luffy é um rapaz com um sonho bem ambicioso: desde criança, ele sonhava em ser pirata! Com sete anos de idade, ele conheceu o capitão pirata Shanks, seu maior ídolo!</p>
+            </div>
+        </div>
+
+            <div class="flex-wrap" data-aos="fade-left">
+                <div class="about">
+                    <h2 class="name"><span>Roronoa</span> Zoro</h2>
+                    <p class="text">Também conhecido como O Caçador de Piratas, é um pirata e ex-Caçador de Recompensas, e também um espadachim que usa 3 espadas. Ele foi o primeiro membro a se juntar aos Piratas do Chapéu de Palha, e até o momento, é considerado a maior ameaça e membro mais perigoso depois de Luffy e o imediato do bando. </p>
+            </div>
+                <img  class="picture" src="src/img/zora.png" alt="luffy">
+        </div>
+
+            <div class="flex-wrap">
+                <img  class="picture" src="src/img/nani.png" alt="luffy">
+                <div class="about">
+                    <h2 class="name"><span>Nami</span></h2>
+                    <p class="text">A "Gata Ladra" Nami é a navegadora dos Piratas do Chapéu de Palha. Ela foi o terceiro membro da tripulação e a segunda a entrar, fazendo-o durante o Arco Orange Town. Ela é a irmã adotiva de Nojiko, desde que as duas ficaram órfãs e foram levadas por Bell-mère.</p>
+            </div>
+        </div>
+
+            <div class="flex-wrap" data-aos="fade-left">
+            <div class="about">
+                <h2 class="name"><span>Usopp</span></h2>
+                <p class="text">Usopp é o filho de Yasopp e Banchina. Ele nasceu e foi criado na Vila Syrup, e era o "capitão" dos Piratas Usopp e o amigo mais próximo de Kaya. Após colaborar com os Chapéus de Palha para derrotar Kuro e os Piratas do Gato Preto, ele foi convidado a se juntar à tripulação.</p>
+            </div>
+            <img  class="picture" src="src/img/usopp.png" alt="luffy">
+        </div>
+
+            <div class="flex-wrap">
+            <img  class="picture" src="src/img/sanji.png" alt="luffy">
+        <div class="about">
+            <h2 class="name"><span>Sanji</span></h2>
+            <p class="text">Sanji foi aprendiz do sous-chef Zeff , e os dois tiveram uma longa história juntos. Nove anos antes, quando um jovem Sanji estava trabalhando como cozinheiro de um navio no Orbit no East Blue, o pirata Zeff da Perna Vermelha e sua tripulação atacaram o navio.</p>
+        </div>
     </div>
 
-    <main>
-        <section class="apresentacao">
-            <article>
-                <div>
-                    <h1 class="title">Olá me chamo Monkey D. Luffy</h1>
-                    <p>Nascido em East Blue, Monkey D. Luffy é um rapaz com um sonho bem ambicioso: desde criança, ele sonhava em ser pirata! Com sete anos de idade, ele conheceu o capitão pirata Shanks, seu maior ídolo!</p>
-                </div>
-            </article>
+            <div class="flex-wrap" data-aos="fade-left">
+        <div class="about">
+                <h2 class="name"><span>Tony</span> Tony Chopper</h2>
+                <p class="text">Ele é o médico da tripulação dos Piratas do Chapéu de Palha. Chopper é uma rena que, após comer a Hito Hito no Mi, adquiriu a habilidade de se transformar e raciocinar como os humanos.</p>
+        </div>
+               <img  class="picture" src="src/img/tony.png" alt="luffy">
+    </div>
+        </main>
 
-            <div class="foto">
-                <picture>
-                    <source srcset="src/img/luffy.png">
-                    <img src="src/img/luffy.png" alt="Luffy">
-                </picture>
-            </div>
-        </section>
-
-        <section class="apresentacao" id="zoro">
-            <div class="foto">
-                <picture>
-                    <source class="zoro" srcset="src/img/zora.png">
-                    <img src="src/img/zora.png" alt="zoro">
-                </picture>
-            </div>
-
-            <article>
-                <div>
-                    <h1 class="title">Olá me chamo Roronoa Zoro</h1>
-                    <p>Também conhecido como O Caçador de Piratas, é um pirata e ex-Caçador de Recompensas, e também um espadachim que usa 3 espadas. Ele foi o primeiro membro a se juntar aos Piratas do Chapéu de Palha, e até o momento, é considerado a maior ameaça e membro mais perigoso depois de Luffy e o imediato do bando.</p>
-                </div>
-            </article>
-        </section>
-
-        <section class="apresentacao">
-            <article>
-                <div>
-                    <h1 class="title">Olá me chamo Nani</h1>
-                    <p>A "Gata Ladra" Nami é a navegadora dos Piratas do Chapéu de Palha. Ela foi o terceiro membro da tripulação e a segunda a entrar, fazendo-o durante o Arco Orange Town. Ela é a irmã adotiva de Nojiko, desde que as duas ficaram órfãs e foram levadas por Bell-mère.</p>
-                </div>
-            </article>
-
-            <div class="foto">
-                <picture>
-                    <img src="src/img/nani.png" alt="Nani">
-                </picture>
-            </div>
-
-        </section>
-
-        <section class="apresentacao" id="robin">
-            <div class="foto">
-                <picture>
-                    <source srcset="src/img/robin.png">
-                    <img src="src/img/robin.png" alt="">
-                </picture>
-            </div>
-
-            <article>
-                <div>
-                    <h1 class="title">Olá me chamo Nico Robin</h1>
-                    <p>Nico Robin, também conhecida como "Criança Demônio" e "Luz da Revolução", é a arqueóloga dos Piratas do Chapéu de Palha. Ela é a única sobrevivente da ilha destruída de Ohara, localizada no West Blue.</p>
-                </div>
-            </article>
-
-        </section>
-
-        <section class="apresentacao">
-            <article>
-                <div>
-                    <h1 class="title"">Olá Me chamo Tony Tony Chooper</h1>
-                    <p>Ele é o médico da tripulação dos Piratas do Chapéu de Palha. Chopper é uma rena que, após comer a Hito Hito no Mi, adquiriu a habilidade de se transformar e raciocinar como os humanos.</p>
-                </div>
-            </article>
-
-            <div class=" foto">
-                        <picture>
-                            <source srcset="src/img/tony.png">
-                            <img src="src/img/tony.png">
-                        </picture>
-                </div>
-
-        </section>
-
-        <section class="apresentacao" id="chopper">
-            <div class="foto">
-                <picture>
-                    <source srcset="src/img/usopp.png">
-                    <img src="src/img/usopp.png">
-                </picture>
-            </div>
-
-            <article>
-                <div>
-                    <h1 class="title">Olá Me chamo Usopp</h1>
-                    <p>Usopp é o filho de Yasopp e Banchina. Ele nasceu e foi criado na Vila Syrup, e era o "capitão" dos Piratas Usopp e o amigo mais próximo de Kaya. Após colaborar com os Chapéus de Palha para derrotar Kuro e os Piratas do Gato Preto, ele foi convidado a se juntar à tripulação.</p>
-                </div>
-            </article>
-        </section>
-
-        <section class="apresentacao">
-            <article>
-                <div>
-                    <h1 class="title">Olá Me chamo Sanji</h1>
-                    <p>Sanji foi aprendiz do sous-chef Zeff , e os dois tiveram uma longa história juntos. Nove anos antes, quando um jovem Sanji estava trabalhando como cozinheiro de um navio no Orbit no East Blue, o pirata Zeff da Perna Vermelha e sua tripulação atacaram o navio.</p>
-                </div>
-            </article>
-
-            <div class="foto">
-                <picture>
-                    <source srcset="src/img/sanji.png">
-                    <img src="src/img/sanji.png">
-                </picture>
-            </div>
-        </section>
-
-        <section class="apresentacao" id="franky">
-            <div class="foto">
-                <picture>
-                    <source srcset="src/img/franky.png">
-                    <img src="src/img/franky.png">
-                </picture>
-            </div>
-
-            <article>
-                <div>
-                    <h1 class="title">Olá Me chamo Franky</h1>
-                    <p>Franky é o carpinteiro dos Piratas do Chapéu de Palha. Ele cresceu em Water 7, e fazia parte do "Tom's Worker", onde construia navios junto a Iceburg e Tom. Em Water 7 ele foi introduzido na história como o líder da Família Franky. Ele foi originalmente chamado de "Cutty Flam" até trocar seu nome para seu apelido, para esconder sua identidade.</p>
-                </div>
-            </article>
-        </section>
-
-        <section class="apresentacao">
-            <article>
-                <div>
-                    <h1 class="title">Olá Me chamo Brook</h1>
-                    <p>Este é um homem que, tendo comido o Fruto da Ressurreição (Yomi Yomi no Mi), assumiu a aparência de um esqueleto . A presença de Laboon com sua ex-equipe presume que, assim como Nico Robin , Brook é de West Blue.</p>
-                </div>
-            </article>
-
-            <div class="foto">
-                <picture>
-                    <source srcset="src/img/brook.png">
-                    <img src="src/img/brook.png">
-                </picture>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-
-    </footer>
-
-    <script src="src/js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration:1300
+    });
+  </script>
 </body>
-
 </html>

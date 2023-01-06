@@ -1,75 +1,91 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    margin: auto;
+.images img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 
-
-
-body{
-    /* background-color: #2d3748; */
-
-    /* possivel alteração do body e do header */
-    
-    background-color: rgba(187, 72, 72, 0.74);
-}
-
-header{
-    background: rgba(187, 72, 72, 0.74);
-}
-
-main .apresentacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-}
-
-
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 100px;
-}
-
-
-main section article {
+.texto-sobre{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.texto-sobre .sobre{
+    width: 65%;
+    height: 100%;
+    font-size: 1.4em;
+    background-color: rgba(255, 255, 255, 0.678);
+    box-shadow: #e88a6177 0px 0px 0px 3px;
+    font-family: var(--secondary);
+    font-weight: 700;
+    color: rgba(128, 128, 128, 0.885);
+    text-align: justify;
+    margin: 50px 0 50px 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
     flex-direction: column;
-
+    flex: 1;
 }
 
-main section article h1{
-    font-size: 40px;
-    line-height: 100%;
-    color: white;
-    font-family: var(--fontpath);
+.flex-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 900px;
+    height: 100%;
+    border: 1px solid rgba(255, 166, 0, 0.898);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    gap: 15px;
+    border-radius: 17px;
+    /* flex-wrap: wrap; */
 }
 
-
-main section article p {
-    margin-top: 20px;
-    font-size: 24px;
-    color: white;
-    font-family: var(--fontscreen);
+ .picture img{
+    width: 100%;
+    height: 100%;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.container .name{
+    font-size: 2.7rem;
+    padding-bottom: 20px;
+    font-family: var(--secondary);
+    font-weight: 700;
 }
 
-a:hover{
-    color: #00b5d8;
+.name{
+    position: relative;
+    padding-left: 20px;
 }
 
-div{
-    width: 500px;
+.name::after{
+    position: absolute;
+    left: 0;
+    top: -6;
+    height: 43px;
+    width: 5px;
+    content: "";
+    background-color: rgba(77, 77, 171, 0.64);
+}
+
+.container .name span{
+    color: rgba(255, 0, 0, 0.525);
+}
+
+.container .text{
+    font-size: 1.7rem;
+    line-height: 35px;
+    text-align: justify;
+    font-family: var(--primary);
+    font-weight: 400;
+    margin-right: 10px;
+    color: rgba(128, 128, 128, 0.885);
 }

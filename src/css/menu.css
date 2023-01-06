@@ -3,16 +3,6 @@
     src: url(../font/Sugar\ Snow.otf);
 }
 
-body{
-    height: 1500px;
-}
-
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 .header .header-container{
     display: flex;
     justify-content: space-between;
