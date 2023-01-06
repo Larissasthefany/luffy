@@ -1,8 +1,16 @@
-.images img{
+html{
+    background: url(../img/mapa.jpg);
+}
+
+.image{
+    width: 250px;
+    height: 250px;
+}
+
+img{
     width: 100%;
     height: 100%;
-    background-size: cover;
-}
+}   
 
 .texto-sobre{
     display: flex;
@@ -14,8 +22,7 @@
     width: 65%;
     height: 100%;
     font-size: 1.4em;
-    background-color: rgba(255, 255, 255, 0.678);
-    box-shadow: #e88a6177 0px 0px 0px 3px;
+    background-color: rgba(255, 255, 255, 0.833);
     font-family: var(--secondary);
     font-weight: 700;
     color: rgba(128, 128, 128, 0.885);
@@ -23,12 +30,13 @@
     margin: 50px 0 50px 0;
     padding: 20px;
     border-radius: 20px;
+    /* box-shadow: #e88a6177 0px 0px 0px 3px; */
 }
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
     flex-direction: column;
     flex: 1;
 }
@@ -38,20 +46,20 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 10px;
+    padding: 40px;
     width: 900px;
     height: 100%;
-    border: 1px solid rgba(255, 166, 0, 0.898);
-    margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    gap: 15px;
-    border-radius: 17px;
+    gap: 25px;
+    background-color: #fff;
+    /* margin-bottom: 20px; */
+    /* border-radius: 17px; */
     /* flex-wrap: wrap; */
+    /* border: 1px solid rgba(255, 166, 0, 0.898); */
 }
 
- .picture img{
-    width: 100%;
-    height: 100%;
+.picture{
+    border-radius: 20px;
 }
 
 .container .name{
@@ -59,6 +67,10 @@
     padding-bottom: 20px;
     font-family: var(--secondary);
     font-weight: 700;
+}
+
+.container .flex-wrap:nth-child(2n+1){
+    flex-direction: row-reverse;
 }
 
 .name{
@@ -88,4 +100,59 @@
     font-weight: 400;
     margin-right: 10px;
     color: rgba(128, 128, 128, 0.885);
+}
+
+.footer{
+    display: flex;
+    background-color: #E86D33;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer h4{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: logo, sans-serif;
+}
+
+.footer nav{
+    margin: 50px 0;
+}
+
+.footer nav ul{
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul li a{
+    color: #F2D8CE;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 20px;
+    transition: 0.3s;
+    font-family: var(--primary);
+}
+
+.footer nav ul li a:hover{
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social i{
+    font-size: 2rem;
+    transition: 0.3s;
+    color: #F2D8CE;
+}
+
+.footer .social a{
+    margin: 20px;
+}
+
+.footer .social a:hover{
+    color: skyblue;
 }
