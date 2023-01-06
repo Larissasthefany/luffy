@@ -3,4 +3,3 @@
 ## Tecnologia Ultilizada
 - HTML
 - CSS
-- JAVASCRIPT
